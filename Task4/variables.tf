@@ -1,7 +1,7 @@
-variable "token" {
-  description = "IAM-токен или OAuth-токен для доступа к Yandex Cloud"
+variable "service_account_key_file" {
+  description = "Путь к JSON-ключу сервисного аккаунта Yandex Cloud"
   type        = string
-  sensitive   = true
+  default     = "key.json"
 }
 
 variable "cloud_id" {
@@ -65,7 +65,7 @@ variable "disk_size" {
 variable "disk_type" {
   description = "Тип сетевого диска (network-ssd или network-hdd)"
   type        = string
-  default     = "network-ssd"
+  default     = "network-hdd"
 }
 
 variable "image_family" {
@@ -83,5 +83,5 @@ variable "ssh_user" {
 variable "ssh_public_key_path" {
   description = "Путь к публичному SSH-ключу"
   type        = string
-  default     = "~/.ssh/id_rsa.pub"
+  default     = "~/.ssh/id_ed25519_github.pub"
 }

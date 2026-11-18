@@ -15,3 +15,9 @@ desktop.ini
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
+terraform.exeterraform.rc
+
+Task4/key.json
+Task4/LICENSE.txt
+Task4/terraform.exe
+Task4/terraform.rc
