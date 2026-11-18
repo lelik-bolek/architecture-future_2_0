@@ -1,0 +1,12 @@
+zone                = "ru-central1-a"
+network_name        = "future-2-0-vpc"
+subnet_name         = "future-2-0-subnet-a"
+subnet_cidr         = ["10.10.0.0/24"]
+vm_name             = "future-data-node-01"
+vm_cores            = 2
+vm_memory           = 4
+disk_size           = 20
+disk_type           = "network-hdd"
+image_family        = "ubuntu-2204-lts"
+ssh_user            = "ubuntu"
+ssh_public_key_path = "~/.ssh/id_ed25519_github.pub"
