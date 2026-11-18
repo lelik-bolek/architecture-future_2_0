@@ -9,3 +9,9 @@ desktop.ini
 # IDE 
 .vscode/ 
 .idea/
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
